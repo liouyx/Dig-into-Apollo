@@ -16,8 +16,10 @@ If "git clone" on github is too slow, pls try apollo **[mirror](https://gitee.co
     - [cyber](cyber)
     - [docker](docker)
     - [modules](modules)
+        - [audio](modules/audio)
         - [bridge](modules/bridge)
         - [canbus](modules/canbus)
+        - [data](modules/data)
         - [drivers](modules/drivers)
         - [dreamview](modules/dreamview)   
         - [map](modules/map)
@@ -32,6 +34,7 @@ If "git clone" on github is too slow, pls try apollo **[mirror](https://gitee.co
         - [v2x](modules/v2x)
 - [performance](performance)
 - [simulation](simulation)
+- [library](library)
 - [papers](papers)
 - [questions](questions)
 

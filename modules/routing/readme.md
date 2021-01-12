@@ -251,7 +251,7 @@ bool GraphCreator::Create() {
       continue;
     }
     
-    // 存储图中节点index和lane_id的关系，因为跳过node可以找到lane，
+    // 存储图中节点index和lane_id的关系，因为通过node可以找到lane，
     // 而通过lane_id需要遍历节点才能找到节点index。
     node_index_map_[lane_id] = graph_.node_size();
     
@@ -316,7 +316,7 @@ bool GraphCreator::Create() {
   return true;
 }
 ```
-小结一下创建的图的流程，首先是从base_map中读取道路信息，之后遍历道路，先创建节点，然后创建节点的边，之后把图(点和边的信息)保存到routing_map中，所以routing_map中就是grap_ protobuf格式的固化，后面routing模块会读取创建好的routing_map通过astar算法来进行路径规划。  
+小结一下创建的图的流程，首先是从base_map中读取道路信息，之后遍历道路，先创建节点，然后创建节点的边，之后把图(点和边的信息)保存到routing_map中，所以routing_map中就是graph_protobuf格式的固化，后面routing模块会读取创建好的routing_map通过astar算法来进行路径规划。  
 
 
 <a name="create_node" />
